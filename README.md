@@ -14,6 +14,7 @@ Aprire powershell/cmd con privilegi amministrativi e digitare i seguenti comandi
 <code>py.exe -m pip install tgcrypt</code><br>
 <code>py.exe -m pip install requests</code><br></p>
 <h2>Avvio:</h2>
+<p>Configurare il file settings.py</p>
 <p>Linux: <code>python3 base.py [--flag]</code><br>
 Windows: <code>py.exe base.py [--flag]</code></p>
 <h2>Flag disponibili:</h2>
