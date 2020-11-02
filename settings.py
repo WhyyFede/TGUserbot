@@ -2,7 +2,7 @@
 id = ""
 hash = ""
 
-#Inserisci i dati del gruppo di controllo
+#Inserisci i dati del gruppo di controllo, link del gruppo in "chat" e chatid del gruppo in "chatid"
 chat = ""
 chatid = ""
 
