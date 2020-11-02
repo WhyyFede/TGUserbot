@@ -17,7 +17,7 @@ Aprire powershell/cmd con privilegi amministrativi e digitare i seguenti comandi
 <p><a href="https://github.com/FedeBerti/TGUserbot.git">Git</a>: <code>git clone https://github.com/FedeBerti/TGUserbot.git</code></p>
 <p><a href="https://github.com/FedeBerti/TGUserbot/archive/main.zip">Zip</a>: <code>https://github.com/FedeBerti/TGUserbot/archive/main.zip</code></p>
 <h2>Avvio:</h2>
-<p><code>cd TGUserbot<code></p>
+<p><code>cd TGUserbot</code></p>
 <p>Configurare il file settings.py</p>
 <p>Linux: <code>python3 base.py [--flag]</code><br>
 Windows: <code>py.exe base.py [--flag]</code></p>
