@@ -122,10 +122,6 @@ def aggiungi(client, message):
     client.leave_chat(cid)
     client.send_message(chat_id, "Ho aggiunto tutti i membri, esco")
 
-def help(client, message):
-    chat_id = message["chat"]["id"]
-    client.send_message(chat_id, "I comandi disponibili sono:\n/stop (stoppare tutti gli userbot)\n/check (Verificare che tutti gli userbot siano online)\n/msgstorm (floddare Es: /msgstorm chatid numeroMSG)\n/update (cambiare tutte le info del profilo)\n/join (entrare in un gruppo Es: /join chatid)\n/leaveall (uscire da tutti i gruppi)\n/dbadd (aggiungere utenti al db Es: /dbadd chatid)\n/aggiungi (Aggiungere utenti ad un gruppo Es: /aggiungi chatid)\n/help (visualizza i comandi)\n/leave (uscire da un gruppo singolo Es: /leave chatid)")
-
 if len(sys.argv) > 1:
     account = sys.argv[1]
 else:
@@ -173,7 +169,6 @@ for app in apps:
     app.add_handler(MessageHandler(leaveAll, filters.regex("leaveall") & filters.chat(settings.chatid)))
     app.add_handler(MessageHandler(aggiungiDB, filters.regex("dbadd") & filters.chat(settings.chatid)))
     app.add_handler(MessageHandler(aggiungi, filters.regex("aggiungi") & filters.chat(settings.chatid)))
-    app.add_handler(MessageHandler(help, filters.regex("help") & filters.chat(settings.chatid)))
     app.add_handler(MessageHandler(leave, filters.regex("leave") & filters.chat(settings.chatid)))
     app.start()
     print(str(app.get_me()["phone_number"]) + " avviato")
